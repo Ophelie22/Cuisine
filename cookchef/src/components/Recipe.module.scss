@@ -1,0 +1,40 @@
+.recipe {  
+    border-radius: 20px;
+    height: 400px;
+// On va metrre un pointeur*/
+    cursor: pointer;
+/* on va catcher le hover au niveau du css
+/ on va faire un scale  ce qui va grossir l'image lors du passage dessus*/
+    &:hover {
+        img {
+        transform: scale(1.1);
+        }
+    //Et le titre se transformera en rouge au moment du passage dessus
+        .recipeTitle {
+        color: var(--primary);
+        }
+    }
+
+}
+
+
+// sur l'image on va faire la transition au bout de 1 secondes.recipe {
+
+.imageContainer {
+    height: 300px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+    img {
+        transition: 1s transform;
+        width: 100%;
+    }
+}
+
+.recipeTitle {
+    height: 100px;
+    transition: 0.2s color;
+    border: 1px solid var(--gray-2);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
